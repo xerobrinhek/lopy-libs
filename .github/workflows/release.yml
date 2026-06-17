@@ -8,11 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Create libs.zip
         run: |
-          zip -r libs.zip llstd llgui
+          zip -r libs.zip llstd llgui llweb
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
