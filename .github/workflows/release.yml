@@ -15,7 +15,7 @@ jobs:
       
       - name: Create libs.zip
         run: |
-          zip -r libs.zip llstd llgui llweb
+          zip -r libs.zip llstd
       
       - name: Upload Release Asset
         uses: ncipollo/release-action@v1
