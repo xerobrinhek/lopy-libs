@@ -32,4 +32,8 @@ class Window {
     public void destroy() {
         cr.destroy_window(this.handle);
     }
+
+    public void add(int handle) {
+        cr.add_widget(this.handle, handle);
+    }
 }

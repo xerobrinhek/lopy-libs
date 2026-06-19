@@ -1,0 +1,4 @@
+#!/bin/bash
+clang -c llgui.c -I. -D_GLFW_X11 -D_GNU_SOURCE -lX11 -lXrandr -lGL -lGLX -o llgui.o
+
+echo "-lX11 -lXrandr -lGL"

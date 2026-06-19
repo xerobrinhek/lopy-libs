@@ -1,0 +1,4 @@
+#!/bin/bash
+clang -c llgui.c -I. -lgdi32 -lopengl32 -lwinmm -o llgui.o
+
+echo "-lgdi32 -lopengl32 -lwinmm"
